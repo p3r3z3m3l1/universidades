@@ -1,0 +1,35 @@
+<div class="content">
+    <?php view::content() ?>
+    <h3>PERSONAS</h3>
+    <table>
+       <thead>
+           <th>ID</th>
+           <th>nombres</th>
+           <th>apellidos</th>
+           <th>edad</th>
+           <th>email</th>
+           <th>fecha</th>
+           <th>acciones</th>
+
+       </thead>
+       <tbody>
+          <?php foreach($listPersonas->items as $item): ?>
+            <tr>
+               <td><?php echo $item->id ?></td>
+               <td><?php echo $item->nombres ?></td>
+               <td><?php echo $item->apellidos ?></td>
+               <td><?php echo $item->edad ?></td>
+               <td><?php echo $item->email ?></td>
+               <td><?php echo $item->fecha ?></td>
+               <td>
+                 <?php echo Html::link('personas/borrar/'.$item->id ,'<i class="material-icons">delete</i></i>','class="btn red"')?>
+                 <?php echo Html::link('personas/editar/'.$item->id ,'<i class="material-icons">edit</i></i>','class="btn green"')?>
+              </td>
+             </tr>
+        
+         <?php endforeach?>
+       </tbody>
+    </table>
+    <?php if($listPersonas->prev) echo Html::linkAction("index/$listPersonas->prev/",'<<anterior>> |') ?>
+    <?php if($listPersonas->next) echo Html::linkAction("index/$listPersonas->next/",'<<proximo >> |') ?>
+</div>
