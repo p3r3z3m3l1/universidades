@@ -1,23 +1,23 @@
 <?php view::content() ?>
-<div class="container">
-    <div class="separador"></div>
-    <div class="cuadro">
-        <?= form::open() ?>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input type="text" name="email" placeholder ="Ej: correo@corporation.com">
-                    <label for="email"></label>
-                </div>
-                <div class="input-field col s12">
-                    <input type="password" name="contrasenia" placeholder="Ej: ContraseniaSegura183">
-                    <label for="contrasenia"></label>
-                </div>
-                <div class="row">
-                    <div class="input-field col s5 ">
-                        <?=form::submit('INICIAR SESION','class="btn blue darken-8"')?>
-                    </div>        
+<div class="contenedor">
+    <div class="item">
+        <?= form::open('universidades/login', 'method="post"') ?>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" name="email" placeholder="Ej: correo@corporation.com">
+            </div>
+            <div class="input-field col s12">
+                <span class="icon-eye" id="eye">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </span>
+                <input type="password" name="password" placeholder="Ej: ContraseniaSegura183">
+            </div>
+            <div class="row" id="btn">
+                <div class="input-field col s5" id="button">
+                    <button type="submit" class="btn blue darken-8" name="boton">INICIAR SESION</button>
                 </div>
             </div>
+        </div>
         <?= form::close() ?>
     </div>
 </div>
