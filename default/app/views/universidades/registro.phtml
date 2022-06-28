@@ -1,49 +1,110 @@
-<h1>registro  personas</h1>
+<h1>registro Universidad</h1>
 <div class="divider"></div>
 <div class="row">
- <?=form::open('personas/guardar','post','class="col s12"');?>
+ <?=form::open('universidac/guardar','post','class="col s12"');?>
     <div class="row">
          <div class="input-field col s6">
-               <?=form::text('personas.nombres')?>
-               <?= form::label('Nombres','nombres')?>
+               <?=form::text('universidad.direccion')?>
+               <?= form::label('Direccion','direccion')?>
             </div>
             <div class="input-field col s6">
-               <?= form::text('personas.apellidos','required')?>
-               <?= form::label('Apellidos','apellidos')?>
+               <?= form::text('universidad.telefono')?>
+               <?= form::label('Telefono','telefono')?>
            </div>
 
             </div>
         </div>
         <div class="row">
         <div class="input-field col s6">
-               <?= form::number('personas.edad','required')?>
-               <?= form::label('Edad','edad')?>
+               <?= form::text('universidad.facultad')?>
+               <?= form::label('Facultad','facultad')?>
           </div>
           <div class="row">
              <div class="input-field col s6">
-               <?= form::text('personas.email','required')?>
-               <?= form::label('Email','email')?>
+               <?= form::text('universidad.carreras')?>
+               <?= form::label('Carreras','carreras')?>
           </div>
           <div class="row">
              <div class="input-field col s6">
-               <?= form::text('personas.dui','required')?>
-               <?= form::label('Dui','dui')?>
+               <?= form::text('universidad.matricula')?>
+               <?= form::label('Matricula','matricula')?>
           </div>
           <div class="row">
              <div class="input-field col s6">
-               <?= form::text('personas.telefono','required')?>
-               <?= form::label('Telefono','telefono')?>
+               <?= form::text('universidad.mensualidad')?>
+               <?= form::label('Mensualidad','mensualidad')?>
 
 
           </div>
           <div class="row">
              <div class="input-field col s6">
-               <?= form::date('personas.fecha')?>
-               <?= form::label('Nacimiento','fecha')?>
+               <?= form::text('universidad.carreras')?>
+               <?= form::label('Carreras','carrera')?>
 
-          
           </div>
-         
+
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo I','ciclo')?>
+               
+            
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo II','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo III','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo IV','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo V','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo VI','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo VII','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo VIII','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo IX','ciclo')?>
+
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?= form::text('universidad.ciclo')?>
+               <?= form::label('Ciclo X','ciclo')?>
+
+          </div>
 
           <div class="row"></div>
           <?=form::submit('Guardar','class="btn green darken-4"')?>
