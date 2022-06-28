@@ -6,9 +6,13 @@ class UniversidadesController extends AppController
         View::template('inicio');
         //$this->listUniversidades = (new Universidades)->getUniversidades($page);
     }
+    public function index2(){
+        View::template('principal');  
+    }
     public function create(){
         View::template('principal');  
     }
+   
    public function registro(){
        View::template('principal');
    }
