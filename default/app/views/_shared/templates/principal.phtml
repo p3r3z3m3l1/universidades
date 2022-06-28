@@ -9,7 +9,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
-
+<body>
+<style>
+    body{
+      background: rgb(231,238,174);
+      background: radial-gradient(circle, rgba(231,238,174,1) 0%, rgba(63,249,141,0.9836309523809523) 0%);
+    }
+    
+    </style>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">UNIVERSIDADES</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><?php echo  Html::link('universidades/create', 'Universidad Modular Abierta')  ?></li>
+        <li><?php echo  Html::link('#', 'Universidad Doctor Andres Bello')  ?></li>
+        <li><?php echo  Html::link('#', 'Universidad Modular Abierta')  ?></li>
+      </ul>
+    </div>
+  </nav>
 
 
     <div class="container">

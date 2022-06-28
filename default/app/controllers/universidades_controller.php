@@ -6,10 +6,13 @@ class UniversidadesController extends AppController
         View::template('inicio');
         //$this->listUniversidades = (new Universidades)->getUniversidades($page);
     }
-    public function index2($page=1){
-        View::template('principal');
-        
+    public function index2(){
+        View::template('principal');  
     }
+    public function create(){
+        View::template('principal');  
+    }
+   
    public function registro(){
        View::template('principal');
    }
@@ -45,6 +48,8 @@ class UniversidadesController extends AppController
     }
     $this->universidades = $universidad->find_by_id((int) $id);
    }
+
+   public function Universidad_Dr_Andres_Bello($page2){}
 
  
 
