@@ -9,8 +9,8 @@
             <div class="input_field col s12">
                 <select name="estado" id="estado">
                     <option value="" disabled selected>estado</option>
-                    <option value="0">Ihnabilitado</option>
-                    <option value="1">Habilitado</option>
+                    <option value="0">Ihnabilitada</option>
+                    <option value="1">Habilitada</option>
 
                 </select>
                 </div> 
