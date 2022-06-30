@@ -23,7 +23,7 @@ class UmaController extends Controller
      */
     public function create()
     {
-        //
+        return view('uma.create');
     }
 
     /**
