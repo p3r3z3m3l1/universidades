@@ -11,12 +11,8 @@
             <th>Facultad</th>
         </thead>
         <tbody>
-            <?php
-               
-            ?>
+
         </tbody>
     </table>
 
 @endsection <div class="container">
-    
-    

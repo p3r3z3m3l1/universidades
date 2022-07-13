@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UmaController;
+use App\Http\Controllers\UsoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('uma',UmaController::class);
+
+Route::resource('uso',UsoController::class);
