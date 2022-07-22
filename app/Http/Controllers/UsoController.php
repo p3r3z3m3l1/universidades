@@ -23,7 +23,8 @@ class UsoController extends Controller
      */
     public function create()
     {
-        //
+        return view('uso.create');
+        
     }
 
     /**

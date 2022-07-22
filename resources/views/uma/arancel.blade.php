@@ -5,7 +5,7 @@
         <div class="input_field col s12">
             <input type="text" name="arancel">
             <label for="arancel">arancel</label>
-        </div>
+        </div>  
         <div class="input_field col s12">
             <input type="text" name="costo">
             <label for="costo">costo</label>
